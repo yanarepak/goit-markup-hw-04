@@ -34,6 +34,9 @@ body{
     color: var(--header-logo-color);
 }
 
+a{text-decoration: none;
+}
+
 .list{
     list-style: none;
 }
@@ -113,7 +116,7 @@ img {
 
 .contacts-nav{
     display: flex;
-    font-style:normal;
+    align-items: center;
     margin-left: auto;
 }
 
@@ -122,15 +125,15 @@ img {
 }
 
 .mail-link,
-.tel-link {  /* тел і мейл в хедері*/
+.tel-link {  
+    display: flex;
     color:var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    text-decoration: none;
     margin-left: auto;
-}
+} 
 
 .contacts-nav .link:hover,
 .contacts-nav .link:focus{
@@ -416,15 +419,17 @@ img {
     background: var(--fond-color);
 }
 
-.customers-list-link:hover,
-.customers-list-link:focus{
+.customers-list-link:hover .customers-list-icon,
+.customers-list-link:focus .customers-list-icon {
+    fill: var(--accent-color);
     border-color: var(--accent-color);
 }
 
-.customers-list-icon:hover,
-.customers-list-icon:focus{
-   fill:var(--accent-color)
-}
+.customers-list-link:hover,
+.customers-list-link:focus{
+    fill: var(--accent-color);
+    border-color: var(--accent-color);
+} 
 
 /* ==================Кнопки===================== */
 .button{
