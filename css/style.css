@@ -172,6 +172,9 @@ img {
 
 
 /* ===================================ГЕРОЙ========================== */
+.hero-background{
+    background-color: var(--secondary-fond-color);
+}
 .hero{
     text-align: center;
     background-color: #C4C4C4;
@@ -181,6 +184,7 @@ img {
     margin-left: auto;
     margin-right: auto;
 
+    background-color: var(--secondary-fond-color);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
     url('../images/hero-foto.jpg');
     background-repeat: no-repeat;
@@ -204,7 +208,7 @@ img {
     text-transform: uppercase;
 }
 
-.button.primary{
+.button.primary{ /*кнопка в герої*/
     
     min-width: 216px;
     padding: 10px 32px;
@@ -213,8 +217,8 @@ img {
     line-height: 1.9;
     letter-spacing: 0.06em;
 }
-/* =============СТИЛІ ДЛЯ ПОРТФОЛІО============== */
-/* =============Features=========== */
+
+/* =============Переваги=========== */
 .features-icon{
     width: 70px;
     height: 70px;
@@ -339,7 +343,7 @@ img {
     padding-bottom: 30px;
     background: var(--fond-color)
 }
-
+/* ==============Іконки під фото команди============ */
 .social-list{
     display: flex;
     justify-content: center;
@@ -372,7 +376,7 @@ img {
 .sociale-list-link:focus .social-list-icon{
     fill: var(--fond-color)
 }
-/* ====================Клієнти======================= */
+/* ====================Клієнти-компанії======================= */
 .customers-section{
     padding-top: 94px;
     padding-bottom: 94px;
@@ -422,9 +426,6 @@ img {
    fill:var(--accent-color)
 }
 
-
-
-
 /* ==================Кнопки===================== */
 .button{
     border-radius: 4px;
@@ -458,7 +459,7 @@ img {
     letter-spacing: 0.06em;
 }
 /* =============ПОРТФОЛІО============ */
-/* Фільтер проектів (кнопки) */
+/* ===================Фільтер проектів (кнопки) */
 .filters-list{
     display: flex;
     flex-wrap: wrap;
@@ -471,7 +472,14 @@ img {
     padding: 6px 22px;
 }
 
-/* Список проектів */
+.filters-button:hover,
+.filters-button:focus{
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
+    0px 1px 2px rgba(0, 0, 0, 0.08), 
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+/*======================= Список проектів */
 .section-projects{
     padding-top: 94px;
     padding-bottom: 94px;
@@ -500,6 +508,13 @@ img {
     letter-spacing: 0.06em;
 }
 
+.projects-list-item:hover,
+.project-list-item:focus{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
+    0px 4px 4px rgba(0, 0, 0, 0.06), 
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .projects-list-text{
     margin-bottom: 20px;
     padding-left: 24px;
@@ -512,14 +527,25 @@ img {
 .page-footer {
     letter-spacing: 0.03em;
     background-color: var(--secondary-fond-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
-.page-footer-container{
-    padding-top: 60px;
+.address-footer{
+ margin-top: 20px;
 }
+
+.footer-description{
+    display: flex;
+    align-items: baseline;
+} 
 
 .page-footer .wrap{
     color: var(--fond-color);
+}
+
+.page-footer-container{
+    margin-right: 70px;
 }
 
 .address{
@@ -533,9 +559,6 @@ img {
 }
 
 .address-nav-list{
-    padding-top: 20px;
-    padding-bottom: 60px;
-    
     display: flex;
     flex-direction: column;
     row-gap: 9px;
@@ -571,22 +594,8 @@ img {
     color: var(--fond-color);
 }
 
-.sociale-list-footer-conteiner{
-    /* display: block;
-    justify-content:center;
-    align-items: center; */
-    margin-right: 160px;
-    /* flex-direction: row; */
-    /* margin-left: 160px; */
-    /* width: 206px;
-    height: 80px;   */
-}
-
 .sociale-list-footer {
     display: flex;
-
-    /* justify-content: center; */
-
     column-gap: 10px;
 }
 
